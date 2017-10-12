@@ -8,9 +8,9 @@ namespace ImplementingGetHashCode__
 {
     class Point3D : IEqualityComparer<Point3D>
     {
-        private double X { get; set; }
-        private double Y { get; set; }
-        private double Z { get; set; }
+        private double X { get; }
+        private double Y { get; }
+        private double Z { get; }
 
         public Point3D(double x, double y, double z)
         {

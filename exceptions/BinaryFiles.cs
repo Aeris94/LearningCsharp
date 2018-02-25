@@ -76,7 +76,18 @@ namespace Program
 
         static void Main(string[] args)
         {
-      
+            BinaryWriter binaryFile = new BinaryWriter(File.Open("text.bin", FileMode.Create));
+            binaryFile.Write(1);
+            binaryFile.Write(0);
+            binaryFile.Write(1);
+            binaryFile.Dispose();
+
+            CopyBinaryFile("text.bin", "text2.bin");
+            List<byte> list = BinaryFileToArray("text2.bin");
+            foreach(byte value in list)
+            {
+                Console.Write("{0}", value);
+            }
         }
     } 
 }

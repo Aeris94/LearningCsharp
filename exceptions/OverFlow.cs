@@ -29,7 +29,11 @@ namespace Program
             catch (OverflowException)
             {
                 Console.WriteLine("Invalid data!");
-            }            
+            }          
+            catch (FormatException)
+            {
+                 Console.WriteLine("Invalid data!");
+            }
             finally
             {
                 Console.WriteLine("Good Bye!");

@@ -49,13 +49,15 @@ namespace Program
             {
                 Take10Numbers(array);
             }
-            catch(FormatException)
+            catch(FormatException e)
             {
                 Console.WriteLine("Invalid data!");
+                Console.WriteLine(e.Message);
             }
-            catch(OverflowException)
+            catch(OverflowException e)
             {
                 Console.WriteLine("Invalid data!");
+                Console.WriteLine(e.Message);
             }
             
             foreach(int value in array)

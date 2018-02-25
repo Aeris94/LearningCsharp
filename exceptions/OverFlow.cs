@@ -26,13 +26,15 @@ namespace Program
                 number = Convert.ToUInt32(input);
                 Console.WriteLine("The squre root of {0} is {1}.", number, Math.Sqrt(number));
             }
-            catch (OverflowException)
+            catch (OverflowException e)
             {
                 Console.WriteLine("Invalid data!");
+                Console.WriteLine(e.Message);
             }          
-            catch (FormatException)
+            catch (FormatException e)
             {
                  Console.WriteLine("Invalid data!");
+                 Console.WriteLine(e.Message);
             }
             finally
             {

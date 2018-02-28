@@ -39,11 +39,12 @@ namespace Program
 
         public override string ToString()
         {
-            foreach (T item in arrayList)
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < currentIndex; i++)
             {
-                Console.WriteLine(item);
+                str.Append(str + " ");
             }
-            return " ";
+            return str.ToString();
         }
 
         private void ResizeArray()

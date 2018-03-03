@@ -8,9 +8,9 @@ namespace Inheritance
 {
     abstract class Animal
     {
-        private string name;
-        private int? age;
-        private bool male;
+        protected string name;
+        protected int? age;
+        protected bool male;
 
         public string Name
         {

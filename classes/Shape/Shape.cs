@@ -8,8 +8,8 @@ namespace Exercise
 {
     abstract class Shape
     {
-        private double height;
-        private double width;
+        protected double height;
+        protected double width;
 
         public double Height
         {

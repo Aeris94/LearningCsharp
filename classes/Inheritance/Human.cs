@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Human<T> where T: IComparable<T>
+    abstract class Human<T> where T: IComparable<T>
     {
         private string firstName;
         private string lastName;

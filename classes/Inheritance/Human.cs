@@ -8,8 +8,8 @@ namespace Inheritance
 {
     abstract class Human<T> where T: IComparable<T>
     {
-        private string firstName;
-        private string lastName;
+        protected string firstName;
+        protected string lastName;
 
         public string FirstName
         {

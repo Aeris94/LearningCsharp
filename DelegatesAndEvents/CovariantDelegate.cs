@@ -17,9 +17,9 @@ namespace Program
         }
     }
 
-    class TrangleArea : RectArea
+    class TriangleArea : RectArea
     {
-        public TrangleArea returnTraingleArea()
+        public TriangleArea returnTraingleArea()
         {
             Console.WriteLine("Returning TriangleArea object.");
             return this;
@@ -34,7 +34,7 @@ namespace Program
         static void Main(string[] args)
         {
             RectArea r = new RectArea();
-            TrangleArea t = new TrangleArea();
+            TriangleArea t = new TriangleArea();
 
             CovDelg del = new CovDelg(r.returnRectArea);
             del();
